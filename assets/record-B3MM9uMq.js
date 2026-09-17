@@ -1,4 +1,4 @@
-import"./modulepreload-polyfill-B5Qt9EMX.js";import{S as R,B as U,A as V,V as _,R as z,F as D,a as H}from"./sensor-version-CU6Ml4FN.js";import{F as B}from"./forward-adoption-DkyN1MFS.js";const q=document.querySelector("#record-app");q.innerHTML=`<header><b>TOUGE <i>SLIME</i></b><span>주행 측정 / SENSOR ${R}</span></header>
+import"./modulepreload-polyfill-B5Qt9EMX.js";import{S as R,B as U,A as V,V as _,R as z,F as D,a as H}from"./sensor-version-Dx1wYjlV.js";import{F as B}from"./forward-adoption-DkyN1MFS.js";const q=document.querySelector("#record-app");q.innerHTML=`<header><b>TOUGE <i>SLIME</i></b><span>주행 측정 / SENSOR ${R}</span></header>
 <section class="card">
  <p class="state" id="state">준비</p>
  <p class="big" id="clock">0:00</p>
