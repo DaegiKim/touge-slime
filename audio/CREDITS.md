@@ -22,9 +22,20 @@
   [Source](https://freesound.org/people/FreeCarSoundsGaming/sounds/535040/), CC0. Its cut is still the
   spectral reference the current sound is balanced against.
 
-- `pop.wav`: Car race, Nordschleife, VLN, several cars passing by, backfire — Dominik_W. [Source](https://freesound.org/people/Dominik_W/sounds/350672/), [CC0](https://creativecommons.org/publicdomain/zero/1.0/). Author describes a Zoom H1 field recording. Public HQ MP3 preview retained as `source/nordschleife-backfire.mp3`. Three transient excerpts around 1.626, 10.356, 27.127 seconds are filtered, enveloped and arranged into seven varied-pitch attacks plus tail, total .94 seconds. This is an edited sound design made from a race recording, not an unedited recording of a single vehicle's exhaust sequence. Transients were selected by waveform analysis; final perceived realism needs listening review.
+- `pop.wav`: **S63 AMG V8 Engine Revs** — marcelweiss.
+  [Source](https://freesound.org/s/505321/), [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+  The same take FOUR RED plays. Two of its three overrun crackle runs — **2.066~2.47s** and
+  **3.484~3.88s** — butted together with the revs between them cut out, 15 bangs over 1.25s, then the
+  room pulled out from between them. The recording has reflections, so each bang trails a tail and the
+  tails fill the gaps, which reads as a concert hall; an envelope follower keyed on the attacks ducks
+  everything quieter (strength 1.5, 19ms release), chosen by ear from a ladder either side of it.
 
-Rebuild the two new samples: `python3 scripts/build-exhaust-audio.py` (uses local ffmpeg-static). Downloaded 2026-09-15. No endorsement implied.
+  **It replaced an assembly of transients from a race recording.** That one's sharpest transient
+  peaked at .315 where these bang at full scale with half their energy below 200Hz, which is where
+  impact lives — it had no weight and stopped too soon. The race recording and the antilag recording
+  that fed its alternatives are gone with it; their links are [350672](https://freesound.org/s/350672/)
+  and [797835](https://freesound.org/s/797835/), both CC0, if either is ever wanted again.
+
 
 ## FOUR RED scene (2026-09-17)
 
@@ -69,16 +80,12 @@ first two runs live in that gap, which is why they need a local baseline to find
 skid and backfire — into `public/audio/candidates/`, and `/sound.html` plays them against what ships.
 That directory is gitignored and never deployed: `scripts/prepare-pages.mjs` copies an allowlist.
 
-**The exhaust ladder was removed once the exhaust was chosen**, along with the six recordings that
+**Each ladder is removed once its sound is chosen.** The exhaust ladder went first, along with the six recordings that
 only fed it: BMW M6 [478597](https://freesound.org/s/478597/) CC0, M4
 [335345](https://freesound.org/s/335345/) CC0, M3 [343369](https://freesound.org/s/343369/) CC BY 3.0,
 Mercedes-AMG C43 [772801](https://freesound.org/s/772801/) CC BY 4.0, Mustang V8
 [438069](https://freesound.org/s/438069/) CC0, VW Golf GTI [268626](https://freesound.org/s/268626/)
 CC0. The links are kept so any of them can be fetched again; nothing shipped ever used them.
-
-`pop.wav` is built by `scripts/build-exhaust-audio.py`, not by `build-audio.mjs`. Reimplementing its
-assembly produced a result 7dB different from the file that ships — not a rounding difference — so the
-original remains its builder of record.
 
 `ffmpeg`'s `loudnorm` is not usable on clips this short; levelling happens in `build-audio.mjs`,
 matching sustained sounds on RMS and impulsive ones on peak.
