@@ -96,3 +96,7 @@ Two things the survey established about the race recording, worth not rediscover
   shipped `pop.wav` uses 1.63, 10.36 and 27.13; 38.82 peaks at .315 against .063 for the 27.1 one.
 - It holds three stretches over a second where the level barely moves, at **48.99, 88.34 and 4.35
   seconds** — cars passing at a steady throttle.
+
+## Buddy voice pool (019)
+
+55 user-selected local TTS outputs in buddy/. See buddy/manifest.json for original/output SHA, generation method, trim/gain and per-clip mapping. Generated using Chatterbox with Papaya/laugh film-character reference conditioning. Reference commercial reuse permission has not been established; this is not a clearance claim for the generated outputs. Reference audio/models are not included. The user requested product publication of this pack; the source and reuse-condition notes above remain applicable.
