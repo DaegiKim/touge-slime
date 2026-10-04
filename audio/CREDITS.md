@@ -100,3 +100,7 @@ Two things the survey established about the race recording, worth not rediscover
 ## Buddy voice pool (019)
 
 55 user-selected local TTS outputs in buddy/. See buddy/manifest.json for original/output SHA, generation method, trim/gain and per-clip mapping. Generated using Chatterbox with Papaya/laugh film-character reference conditioning. Reference commercial reuse permission has not been established; this is not a clearance claim for the generated outputs. Reference audio/models are not included. The user requested product publication of this pack; the source and reuse-condition notes above remain applicable.
+
+## Selected scene voices
+
+13 additional user-selected Chatterbox Multilingual outputs in scenes/. See scenes/manifest.json for original/output hashes and edge trim/gain. They use the same Papaya/laugh reference conditioning as the buddy pack above; the same unresolved reference reuse conditions apply. Originals, raw takes, models and reference audio remain local and are not shipped. The user requested product publication of this pack; the source and reuse-condition notes above remain applicable.
