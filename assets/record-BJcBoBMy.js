@@ -1,4 +1,4 @@
-import{R as q}from"./ride-state-CrSJoCkA.js";import{S as T,B as J,A as X,V as Y,F as K,a as Q}from"./sensor-version-DMzz_u-G.js";import{F as W}from"./forward-adoption-Ry7T11sZ.js";const Z=document.querySelector("#record-app");Z.innerHTML=`<header><b>TOUGE <i>SLIME</i></b><span>주행 측정 / SENSOR ${T}</span></header>
+import{R as q}from"./ride-state-CrSJoCkA.js";import{S as T,B as J,A as X,V as Y,F as K,a as Q}from"./sensor-version-CUXbJSzI.js";import{F as W}from"./forward-adoption-DsPUw2Kp.js";const Z=document.querySelector("#record-app");Z.innerHTML=`<header><b>TOUGE <i>SLIME</i></b><span>주행 측정 / SENSOR ${T}</span></header>
 <section class="card">
  <p class="state" id="state">준비</p>
  <p class="big" id="clock">0:00</p>
